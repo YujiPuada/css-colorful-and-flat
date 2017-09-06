@@ -8,6 +8,8 @@ body {
     background-color: #e1eef6;
 }
 
+/*CSS for nav*/
+
 nav {
     width: 60%;
     margin: 1em auto 0 auto;
@@ -21,9 +23,21 @@ nav > ul > li {
     list-style-type: none;
     display: inline;
     margin: 0 2em;
-    color: #D81159;
     font-family: 'Raleway', sans-serif;
+    font-size: .75em;
+    text-transform: uppercase;
 }
+
+nav > ul > li > a {
+    color: #D81159;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    color: #218380;
+}
+
+/*CSS for header*/
 
 .topHead {
     width: 60%;
@@ -34,12 +48,16 @@ nav > ul > li {
 header > h1 {
     color: #218380;
     font-family: 'Bitter', serif;
+    font-size: 3.5em;
 }
 
 header > p {
     color: #8F2D56;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
 }
+
+/*CSS for main*/
 
 main {
     width: 60%;
@@ -52,11 +70,16 @@ main > article {
     padding: 1em;
 }
 
+main > article > section {
+    margin-bottom: 2em;
+}
+
 main > article > header {
     text-align: center;
     color: #218380;
     margin: 2em 0;
     font-family: 'Bitter', serif;
+    font-size: 1.5em;
 }
 
 main > article > figure {
@@ -78,7 +101,17 @@ main > article > section > p {
     line-height: 1.5em;
     word-spacing: .1em;
     font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    font-size: 1em;
 }
+
+main > article > section > a {
+    color: #218380;
+    font-family: 'Raleway', sans-serif;
+    float: right;
+}
+
+/*CSS for aside*/
 
 aside {
     width: 60%;
@@ -97,23 +130,37 @@ h3 {
     color: #8F2D56;
     font-family: 'Bitter', serif;
     margin-bottom: 1em;
+    font-size: 1.5em;
 }
 
 section > ul > li {
     list-style-type: none;
     text-align: left;
-    color: #218380;
     font-family: 'Raleway', sans-serif;
+    margin: .5em 0;
 }
+
+section > ul > li > a {
+    color: #218380;
+    text-decoration: none;
+}
+
+section > ul > li > a:hover {
+    color: #D81159;
+}
+
+/*CSS for footer*/
 
 footer {
     width: 60%;
     margin: 0 auto;
     text-align: center;
     border-top: 1px solid #FFBC42;
-    padding-top: 2em;
+    padding: 1em 0;
 }
 
 small {
     color: #D81159;
+    font-family: 'Bitter', serif;
+    font-size: .8em;
 }
